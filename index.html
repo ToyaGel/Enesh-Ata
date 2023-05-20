@@ -34,62 +34,11 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2362599053';
+    var serviceWorkerVersion = '3707361937';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
-<style>
-    .loading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    }
-
-    .loader {
-      border: 16px solid #f3f3f3;
-      border-radius: 50%;
-      border: 15px solid ;
-      border-top: 16px solid blue;
-      border-right: 16px solid white;
-      border-bottom: 16px solid blue;
-      border-left: 16px solid white;
-      width: 120px;
-      height: 120px;
-      -webkit-animation: spin 2s linear infinite;
-      animation: spin 2s linear infinite;
-    }
-
-    @-webkit-keyframes spin {
-      0% {
-        -webkit-transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-      }
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
-<body>
-<div class="loading">
-  <div class="loader"></div>
-</div>
-<script src="main.dart.js" type="application/javascript"></script>
-
 </script>
 
 <!-- Loading indicator -->
@@ -148,7 +97,6 @@
     </style>
   <img src="icons/Icon-192.png" alt="Loading indicator..." />
 </div>
-
 <script>
     window.addEventListener('load', function () {
       var loading = document.querySelector('#loading');
@@ -172,5 +120,10 @@
     });
   </script>
 
+<body>
+<div class="loading">
+  <div class="loader"></div>
+</div>
+<script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
